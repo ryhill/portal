@@ -90,7 +90,7 @@
         slider.slides.css({"width": "100%", "float": "left", "marginRight": "-100%"}).eq(slider.currentSlide).fadeIn(slider.vars.animationDuration); 
       }
       ///////////////////////////////////////////////////////////////////
-      
+     // ryhill slider controler
       ///////////////////////////////////////////////////////////////////
       // FlexSlider: Control Nav
       if (slider.vars.controlNav) {
@@ -248,15 +248,9 @@
       //////////////////////////////////////////////////////////////////
       
       //////////////////////////////////////////////////////////////////
-      //FlexSlider:Touch Swip Gestures
-      //Some brilliant concepts adapted from the following sources
-      //Source: TouchSwipe - http://www.netcu.de/jquery-touchwipe-iphone-ipad-library
-      //Source: SwipeJS - http://swipejs.com
+   
       if ('ontouchstart' in document.documentElement && slider.vars.touch) {
-        //For brevity, variables are named for x-axis scrolling
-        //The variables are then swapped if vertical sliding is applied
-        //This reduces redundant code...I think :)
-        //If debugging, recognize variables are named for horizontal scrolling
+       
         var startX,
           startY,
           offset,
@@ -514,7 +508,7 @@
   $.flexslider.defaults = {
     animation: "slide",              //String: Select your animation type, "fade" or "slide"
     slideDirection: "horizontal",   //String: Select the sliding direction, "horizontal" or "vertical"
-    slideshow: true,                //Boolean: Animate slider automatically
+    slideshow: true,                //Boolean: 
     slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
     animationDuration: 600,         //Integer: Set the speed of animations, in milliseconds
     directionNav: false,             //Boolean: Create navigation for previous/next navigation? (true/false)
@@ -535,10 +529,10 @@
     touch: true,                    //Boolean: Disable touchswipe events
     controlsContainer: "",          //Selector: Declare which container the navigation elements should be appended too. Default container is the flexSlider element. Example use would be ".flexslider-container", "#container", etc. If the given element is not found, the default action will be taken.
     manualControls: "",             //Selector: Declare custom control navigation. Example would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
-    start: function(){},            //Callback: function(slider) - Fires when the slider loads the first slide
-    before: function(){},           //Callback: function(slider) - Fires asynchronously with each slider animation
-    after: function(){},            //Callback: function(slider) - Fires after each slider animation completes
-    end: function(){}               //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
+    start: function(){},            //Callback: function(slider) 
+    before: function(){},           //Callback: function(slider) 
+    after: function(){},            //Callback: function(slider) 
+    end: function(){}               //Callback: function(slider) 
   }
   
   //FlexSlider: Plugin Function

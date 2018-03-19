@@ -8,29 +8,30 @@
 <link rel="shortcut icon" href="ryhill/img/fc.png" type="favicon/ico" /> 
 <!-- css -->
 <link href="ryhill/css/bootstrap.min.css" rel="stylesheet" />
+
+<link href="ryhill/css/nspr.css" rel="stylesheet" />
+
+
 <link href="ryhill/css/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link href="ryhill/css/flexslider.css" rel="stylesheet" />
 <link href="ryhill/css/animate.css" rel="stylesheet" />
 <link href="ryhill/css/style.css" rel="stylesheet" />
 
+
 </head>
 <body>
-<div id="wrapper" class="home-page">
-	<!-- start header -->
-	<header class="navbar-fixed-top">
-        <div class="navbar navbar-default navbar-static-top ">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="./"><img src="ryhill/img/logo.png" alt="logo"/></a>
-                </div>
 
-                <div class="navbar-collapse collapse  ">
-                    <ul class="nav navbar-nav">
+<div id="fh5co-wrapper wrapper" class="home-page">
+        <div id="fh5co-page">
+
+        <header id="fh5co-header-section " class="header-fix">
+            <div class="container">
+                <div class="nav-header">
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark" id="navToggle"><i></i></a>
+                    <a class="navbar-brand" href="."><img src="ryhill/img/logo.png" alt="logo"/></a>
+                    <!-- START #fh5co-menu-wrap -->
+                    <nav id="fh5co-menu-wrap" role="navigation">
+                        <ul class="sf-menu" id="fh5co-primary-menu">
                       
 						<li><a href="ryhill/pages/company.html">Company</a></li>
                          <li><a href="ryhill/pages/competency.html">Competency</a></li> 
@@ -40,24 +41,20 @@
 						<li><a href="ryhill/pages/ourteam.html">Our Team</a></li>
                         <li><a href="ryhill/pages/career.html">Careers</a></li>
                         <li><a href="ryhill/pages/contact.html">Contact Us</a></li>
-                    </ul>
+                   </ul>
+                    </nav>
                 </div>
             </div>
-        </div>
-	</header>
+        </header><!-- start header -->
    <div style="clear:both;">&nbsp;</div>
 	<!-- end header -->
-	<section id="banner">
 
-
+	<section id="banner ">
 
 	<!-- Slider -->
         <div id="main-slider" class="flexslider img-responsive carousel-item "  >
 
-
             <ul class="slides">
-
- 
               <li>
                 <img src="ryhill/img/slides/1.jpg"  alt="Responsive image" />
                  
@@ -123,6 +120,7 @@
         </div>
 
 	<!-- end slider -->
+
  
 	</section>
 	<section class="txt-area">
@@ -312,32 +310,44 @@
             	<div class="row">
 			<div class="col-md-12">
 				<div class="aligncenter"><h2 class="aligncenter">Our Clients</h2>
-RyHiLL solves our clients' toughest challenges by providing unmatched services in strategy, consulting, digital, technology and operations. We partner with more than three-quarters of the Fortune Global 20, driving innovation to improve the way the world works and lives.</div>
+                    RyHiLL solves our clients' toughest challenges by providing unmatched services in strategy, consulting, digital, technology and operations. We partner with more than three-quarters of the Fortune Global 20, driving innovation to improve the way the world works and lives.
+                </div>
 				<br/>
 			</div>
 		</div>
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-md-2 client">
-                    <div class="img client1"></div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 client">
-                    <div class="img client2"></div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 client">
-                    <div class="img client3"></div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 client">
-                    <div class="img client4"></div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 client">
-                    <div class="img client5"></div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 client">
-                    <div class="img client6"></div>
-                </div>
-            </div>
-        </div>
-    </section> 
+ <div class="row">
+
+  <div class="clients-wrap">
+    <ul id="clients-list" class="clearfix" style="height:90px; overflow-y: hidden;">
+      <li>
+        <img src="ryhill/img/client1.png" alt="">
+      </li>
+      <li>
+        <img src="ryhill/img/client2.png" alt="">
+      </li>
+      <li>
+        <img src="ryhill/img/client3.png" alt="">
+      </li>
+      <li>
+        <img src="ryhill/img/client4.png" alt="">
+      </li>
+      <li>
+        <img src="ryhill/img/client5.png" alt="">
+      </li>
+      <li>
+        <img src="ryhill/img/client6.png" alt="">
+      </li>
+      <li>
+        <img src="ryhill/img/client7.png" alt="">
+      </li>
+     
+    </ul>
+  </div>
+
+    </div>
+</div>
+</section> 
+
 	<footer>
 
 	<div class="container">
@@ -415,17 +425,30 @@ RyHiLL solves our clients' toughest challenges by providing unmatched services i
 	</div>
 	</footer>
 </div>
+</div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 <!-- javascript ======-->
-
 <script src="ryhill/js/jquery.js"></script>
+
+
 <script src="ryhill/js/bootstrap.min.js"></script>
 <script src="ryhill/js/jquery.fancybox.pack.js"></script>
 <script src="ryhill/js/jquery.fancybox-media.js"></script> 
 <script src="ryhill/js/portfolio/jquery.quicksand.js"></script>
-<script src="ryhill/js/jquery.flexslider.js"></script>
+
+<!--<script src="ryhill/js/jquery.flexslider.js"></script>-->
+<script src="ryhill/js/flexslider/jquery.flexslider.js"></script>
+
 <script src="ryhill/js/animate.js"></script>
 <script src="ryhill/js/custom.js"></script>
+
+
+
+<!--New Nav-->
+<script src="ryhill/js/bootstrap-datepicker.min.js"></script>
+<script src="ryhill/js/jquery.stellar.min.js"></script>
+<script src="ryhill/js/mainspr.js"></script>
+<script src="ryhill/js/spr.js"></script>
 
 </body>
 </html>
