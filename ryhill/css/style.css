@@ -273,13 +273,14 @@ img.img-polaroid {
   margin: 0;
 }
 #offcanvas-menu ul li {
-  padding: 0;
+  padding:10px 0 0 0;
   margin: 0 0 10px 0;
   list-style: none;
 }
 #offcanvas-menu ul li a {
-  font-size: 15px;
-  color: rgba(199, 206, 220, 0.84);
+  font-size: 16px;
+  color: rgba(199, 206, 220, 0.86);
+  font-weight: bold;
 }
 #offcanvas-menu ul li a:hover {
   color: #ffffff;

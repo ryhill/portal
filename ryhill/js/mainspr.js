@@ -108,14 +108,17 @@ $(function() {
 		});	
 
 	}
+// Animations
 
-	
 
-	// Click outside of the Mobile Menu
+// Click outside of the Mobile Menu
 	var mobileMenuOutsideClick = function() {
 		$(document).click(function (e) {
 	    var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
+	    	if ($('#navToggle').hasClass('active')) {
+				$('#navToggle').removeClass('active').addClass('dark');
+			} 
 	      if ( $('body').hasClass('fh5co-offcanvas') ) {
 				$('body').removeClass('fh5co-offcanvas');
 			}
@@ -124,7 +127,6 @@ $(function() {
 	};
 
 
-	// Animations
 
 	// Document on load.
 	$(function(){
